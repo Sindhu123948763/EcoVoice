@@ -1,0 +1,116 @@
+/* src/styles/theme.css */
+
+:root {
+  /* Font Families */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  /* Theme Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 15px rgba(0, 245, 160, 0.4);
+
+  /* Light Theme Overrides (Default is Dark/Eco Mode) */
+  --bg-color: #050a07;
+  --panel-bg: rgba(18, 30, 23, 0.7);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --panel-hover-bg: rgba(26, 43, 33, 0.85);
+  --text-primary: #f0fdf4;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Accent Colors */
+  --color-primary: #00f5a0;       /* Vibrant Emerald Mint */
+  --color-primary-rgb: 0, 245, 160;
+  --color-secondary: #00d9f5;     /* Eco Water Cyan */
+  --color-secondary-rgb: 0, 217, 245;
+  --color-accent: #10b981;        /* Forest Emerald Green */
+  --color-warning: #f59e0b;       /* Fire Alert Amber */
+  --color-danger: #f87171;        /* Plastic Pollution Coral */
+  --color-success: #34d399;       /* Verified Clean Green */
+  --color-info: #60a5fa;          /* Atmosphere Blue */
+}
+
+/* Light Theme Variables */
+[data-theme="light"] {
+  --bg-color: #f3fcf7;
+  --panel-bg: rgba(255, 255, 255, 0.8);
+  --panel-border: rgba(0, 0, 0, 0.08);
+  --panel-hover-bg: rgba(235, 247, 240, 0.95);
+  --text-primary: #0b1a11;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  
+  --color-primary: #047857;       /* Darker Emerald for readability */
+  --color-primary-rgb: 4, 120, 87;
+  --color-secondary: #0369a1;     /* Darker Cyan */
+  --color-secondary-rgb: 3, 105, 161;
+  --color-accent: #059669;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 15px rgba(4, 120, 87, 0.2);
+}
+
+/* Base Keyframe Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(0, 245, 160, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(0, 245, 160, 0.6); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulseSoft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.animate-fade {
+  animation: fadeIn var(--transition-normal) forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp var(--transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight var(--transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scale {
+  animation: scaleUp var(--transition-normal) cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-pulse-soft {
+  animation: pulseSoft 2s infinite ease-in-out;
+}
