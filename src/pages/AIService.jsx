@@ -72,6 +72,8 @@ export const AIService = () => {
         setInput("How can our city transition to electric buses by 2028?");
       }, 4000);
     }
+
+    
   };
 
   useEffect(() => {
