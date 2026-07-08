@@ -139,12 +139,8 @@ const logoText = {
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
-<<<<<<< HEAD
   fontWeight: 100,
-  color: 'skyblue'
-=======
   color: '#FAF9F6'
->>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
 };
 
 const socialsRow = {
@@ -187,12 +183,8 @@ const linkList = {
 
 const linkStyle = {
   fontSize: '0.88rem',
-<<<<<<< HEAD
   fontWeight: 900,
-  color: 'var(--text-secondary)',
-=======
   color: '#F5FFFA',
->>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
   transition: 'color 0.2s'
 };
 
@@ -200,11 +192,7 @@ const formStyle = {
   display: 'flex',
   border: '0.2px solid #F5FFFA',
   borderRadius: 'var(--radius-sm)',
-<<<<<<< HEAD
-  background: 'rgb(221, 196, 196)',
-=======
   background: 'rgba(255, 255, 255, 0.05)',
->>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
   overflow: 'hidden'
 };
 
