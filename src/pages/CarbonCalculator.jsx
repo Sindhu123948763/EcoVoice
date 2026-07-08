@@ -86,8 +86,8 @@ export const CarbonCalculator = () => {
           <Calculator size={12} />
           <span>Carbon Auditing Tool</span>
         </span>
-        <h1 style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '0.5rem', color: 'rgba(169, 217, 217, 0.8)' }}>Carbon footprint Diagnosis</h1>
-        <p style={{ color: 'var(--text-secondary)' }}>Identify high-impact factors. Estimate your annual greenhouse footprints. Get offset checklists.</p>
+        <h1 style={{ fontSize: '2.2rem', fontWeight: 800, marginTop: '0.5rem', color: 'rgba(56, 101, 79, 1)' }}>Carbon footprint Diagnosis</h1>
+        <p style={{ color: 'rgba(54, 67, 60, 1)' }}>Identify high-impact factors. Estimate your annual greenhouse footprints. Get offset checklists.</p>
       </section>
 
       {/* Main Split Layout */}
@@ -402,7 +402,7 @@ const visualCard = {
   display: 'flex',
   flexDirection: 'column',
   gap: '1.25rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgba(15, 16, 16, 1)'
 };
 
 const offsetsBlock = {

@@ -87,10 +87,10 @@ export const AIService = () => {
       {/* Header */}
       <section style={headerRow}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          <Cpu size={28} color="var(--color-primary)" />
-          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(169, 217, 217, 0.8)' }}>AI Consultant Desk</h1>
+          <Cpu size={28} color="#1090B2" />
+          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(56, 101, 79, 1)' }}>AI Consultant Desk</h1>
         </div>
-        <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>Query regulatory criteria, check safety metrics, or upload ecological documents for immediate auditing.</p>
+        <p style={{ margin: '0.25rem 0 0 0', color: 'rgba(54, 67, 60, 1)' }}>Query regulatory criteria, check safety metrics, or upload ecological documents for immediate auditing.</p>
       </section>
 
       {/* Workspace Grid */}
@@ -233,7 +233,7 @@ const chatCard = {
   display: 'flex',
   flexDirection: 'column',
   padding: '1.5rem',
-  background: 'rgba(9, 15, 12, 0.65)',
+  background: 'rgba(23, 21, 22, 1)',
   position: 'relative',
   overflow: 'hidden'
 };
