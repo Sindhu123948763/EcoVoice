@@ -42,18 +42,18 @@ export const Dashboard = () => {
           <img src={avatar} alt="avatar" style={userAvatar} />
           <div>
             <h1 style={greetingText}>Active Hub: {username}</h1>
-            <p style={{ margin: 0, color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <p style={{ margin: 0, color: '--text-secondary: #6c757d', fontSize: '0.9rem' }}>
               Welcome back to your ecological dashboard. Your efforts offset real carbon emissions.
             </p>
           </div>
         </div>
         <div style={scoreWrapper}>
           <div style={scoreBlock}>
-            <span style={scoreLabel}>Eco Score</span>
+            <span style={{scoreLabel, color: 'rgba(205, 199, 213, 1)'}}>Eco Score</span>
             <span style={scoreNum}>{ecoScore} pts</span>
           </div>
           <div style={scoreBlock}>
-            <span style={scoreLabel}>Volunteer Hours</span>
+            <span style={{scoreLabel, color: 'rgba(205, 199, 213, 1)'}}>Volunteer Hours</span>
             <span style={scoreNum}>{hours} hrs</span>
           </div>
         </div>
@@ -104,7 +104,7 @@ export const Dashboard = () => {
               <TrendingDown size={18} color="var(--color-primary)" />
               <span>Carbon Footprint Trend</span>
             </h3>
-            <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tons CO₂/Year</span>
+            <span style={{ fontSize: '0.8rem', color: '--text-secondary: #6c757d' }}>Tons CO₂/Year</span>
           </div>
           <ChartWidget type="line" data={chartData} title="Estimated Annual Footprint over time" />
           <div style={chartDetails}>
@@ -200,7 +200,7 @@ const topBanner = {
   alignItems: 'center',
   flexWrap: 'wrap',
   gap: '1.5rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgba(31, 29, 32, 1)'
 };
 
 const userInfo = {
@@ -222,7 +222,7 @@ const greetingText = {
   fontSize: '1.75rem',
   fontWeight: 800,
   margin: 0,
-  color: 'rgba(169, 217, 217, 0.8)'
+  color: 'rgba(205, 199, 213, 1)'
 };
 
 const scoreWrapper = {
@@ -268,7 +268,7 @@ const metricHeader = {
 
 const metricLabel = {
   fontSize: '0.8rem',
-  color: 'var(--text-muted)',
+  color: '#6c757d !important',
   fontWeight: 600,
   textTransform: 'uppercase',
   letterSpacing: '0.05em'
@@ -321,7 +321,7 @@ const chartDetails = {
   justifyContent: 'space-between',
   alignItems: 'center',
   fontSize: '0.85rem',
-  color: 'var(--text-secondary)',
+  color: '#ffffff',
   flexWrap: 'wrap',
   gap: '1rem'
 };
