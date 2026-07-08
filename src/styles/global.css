@@ -67,6 +67,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: fit-content;
 }
 
 .main-layout {
@@ -348,4 +349,38 @@ a:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+
+/* ===========================
+   Navbar Responsive
+=========================== */
+
+.desktop-nav{
+    display:flex;
+}
+
+.mobile-menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .desktop-nav{
+        display:none !important;
+    }
+
+    .mobile-menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .notification-btn{
+        display:none;
+    }
+
+    .username{
+        display:none;
+    }
 }
