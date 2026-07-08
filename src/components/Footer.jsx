@@ -78,7 +78,7 @@ export const Footer = () => {
       <div style={bottomBar}>
         <div style={bottomContainer}>
           <span>© {new Date().getFullYear()} EcoVoice Global. All rights reserved.</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem'}}>
             Made with <Heart size={12} color="var(--color-primary)" fill="var(--color-primary)" /> for our Biosphere.
           </span>
         </div>
@@ -88,7 +88,8 @@ export const Footer = () => {
 };
 
 const footerStyle = {
-  background: 'rgba(5, 10, 7, 0.95)',
+  background: '#5a5a5a',
+  fontWeight: 950,
   borderTop: '1px solid var(--panel-border)',
   padding: '4rem 2rem 0 2rem',
   color: 'var(--text-secondary)',
@@ -138,7 +139,8 @@ const logoText = {
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
-  color: 'var(--text-muted)'
+  fontWeight: 100,
+  color: 'skyblue'
 };
 
 const socialsRow = {
@@ -155,9 +157,12 @@ const socialIcon = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: 'var(--text-secondary)',
+  backgroundColor: '#ffffff77',
+  color: '#039978',
+  fontWeight: 950,
   transition: 'all 0.2s'
 };
+
 
 const titleStyle = {
   fontSize: '1rem',
@@ -178,6 +183,7 @@ const linkList = {
 
 const linkStyle = {
   fontSize: '0.88rem',
+  fontWeight: 900,
   color: 'var(--text-secondary)',
   transition: 'color 0.2s'
 };
@@ -186,7 +192,7 @@ const formStyle = {
   display: 'flex',
   border: '1px solid var(--panel-border)',
   borderRadius: 'var(--radius-sm)',
-  background: 'rgba(255, 255, 255, 0.02)',
+  background: 'rgb(221, 196, 196)',
   overflow: 'hidden'
 };
 
@@ -195,7 +201,7 @@ const inputStyle = {
   background: 'transparent',
   border: 'none',
   padding: '0.75rem 1rem',
-  color: 'var(--text-primary)',
+  color: 'black',
   fontSize: '0.85rem',
   outline: 'none'
 };

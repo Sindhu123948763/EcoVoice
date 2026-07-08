@@ -95,7 +95,7 @@ a:hover {
 
 /* Glassmorphism styling */
 .glass-panel {
-  background: var(--panel-bg);
+  background: black;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -121,7 +121,7 @@ a:hover {
 } */
 
 .glass-card {
-  background: var(--panel-bg);
+  background: black;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -149,12 +149,12 @@ a:hover {
 
 
 .glass-card {
-  background: var(--panel-bg);
+  background: black;
 }
 
 .glass-card:hover {
   background: var(--panel-hover-bg);
-  border-color: rgba(0,245,160,.2);
+  border-color: rgb(224, 230, 227);
 }
 
 
@@ -290,8 +290,8 @@ a:hover {
 }
 
 .badge-info {
-  background: rgba(96, 165, 250, 0.15);
-  color: var(--color-info);
+  background: rgba(185, 194, 204, 0.15);
+  color: blue;
 }
 
 /* Common Visual Layouts */
