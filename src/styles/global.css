@@ -67,6 +67,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: fit-content;
 }
 
 .main-layout {
@@ -95,7 +96,7 @@ a:hover {
 
 /* Glassmorphism styling */
 .glass-panel {
-  background: black;
+  background: rgba(15, 16, 16, 1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -105,8 +106,8 @@ a:hover {
 }
 
 .glass-panel:hover {
-  background: var(--panel-hover-bg);
-  border-color: rgba(0, 245, 160, 0.2);
+  /* background: var(--panel-hover-bg);
+  border-color: rgba(0, 245, 160, 0.2); */
 }
 
 /* .glass-card {
@@ -121,7 +122,7 @@ a:hover {
 } */
 
 .glass-card {
-  background: black;
+  background: rgba(15, 16, 16, 1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -136,25 +137,9 @@ a:hover {
               box-shadow var(--transition-fast);
 }
 
-
-/* .glass-card:hover {
-   transform: none;
-    background: #666d68;   /* Use the same color as .glass-panel:hover */
-    /* box-shadow: var(--shadow-md); */
-  /* transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(0, 245, 160, 0.3); */
-/* } */ 
-
-
-
-.glass-card {
-  background: black;
-}
-
 .glass-card:hover {
   background: var(--panel-hover-bg);
-  border-color: rgb(224, 230, 227);
+  border-color: rgba(0,245,160,.2);
 }
 
 
@@ -233,7 +218,7 @@ a:hover {
 .form-input,
 .form-textarea,
 .form-select {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(241, 239, 239, 0.03);
   border: 1px solid var(--panel-border);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
@@ -255,6 +240,11 @@ a:hover {
   resize: vertical;
   min-height: 100px;
 }
+.form-select option{
+  background: #1c1c1c;
+  color: #ffffff;
+}
+
 
 /* Color and Text Utility Classes */
 .text-gradient {
@@ -275,8 +265,8 @@ a:hover {
 }
 
 .badge-success {
-  background: rgba(52, 211, 153, 0.15);
-  color: var(--color-success);
+  background: rgba(5, 165, 106, 0.507);
+  color: #1090B2;
 }
 
 .badge-warning {
@@ -348,4 +338,38 @@ a:hover {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+
+/* ===========================
+   Navbar Responsive
+=========================== */
+
+.desktop-nav{
+    display:flex;
+}
+
+.mobile-menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .desktop-nav{
+        display:none !important;
+    }
+
+    .mobile-menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .notification-btn{
+        display:none;
+    }
+
+    .username{
+        display:none;
+    }
 }

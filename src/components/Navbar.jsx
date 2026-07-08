@@ -35,7 +35,7 @@ export const Navbar = () => {
         </Link>
 
         {/* Desktop Main Links */}
-        <nav style={desktopNavLinks}>
+        <nav className="desktop-nav"  style={desktopNavLinks}>
           <Link to="/" style={navLinkStyle(isActive('/'))}>Home</Link>
           <Link to="/community" style={navLinkStyle(isActive('/community'))}>Community</Link>
           <Link to="/learn" style={navLinkStyle(isActive('/learn'))}>Learn</Link>
@@ -52,6 +52,7 @@ export const Navbar = () => {
           {/* Notifications Center */}
           <div style={{ position: 'relative' }}>
             <button 
+            className="notification-btn"
               style={actionBtnStyle} 
               onClick={() => { setShowNotif(!showNotif); markAllNotificationsRead(); }}
               aria-label="Notifications"
@@ -93,7 +94,7 @@ export const Navbar = () => {
                 onClick={() => setShowUserMenu(!showUserMenu)}
               >
                 <img src={user.avatar} alt="avatar" style={avatarImgStyle} />
-                <span style={usernameSpan}>{user.username}</span>
+                <span className="username" style={usernameSpan}>{user.username}</span>
               </button>
 
               {showUserMenu && (
@@ -128,6 +129,7 @@ export const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button 
+          className="mobile-menu-toggle"
             style={mobileMenuToggle}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle Menu"
@@ -391,7 +393,7 @@ const dropdownLinkStyle = {
 };
 
 const mobileMenuToggle = {
-  display: 'none',
+  
   background: 'none',
   border: 'none',
   color: 'var(--text-primary)',
@@ -400,17 +402,16 @@ const mobileMenuToggle = {
 };
 
 const mobileDrawerStyle = {
-  position: 'absolute',
+  position: 'fixed',
   top: '70px',
   left: 0,
+  right: 0,
   width: '100%',
-  borderTop: 'none',
-  borderLeft: 'none',
-  borderRight: 'none',
+  background: 'rgba(9,15,12,.98)',
+  padding: '1rem',
+  zIndex: 998,
   borderRadius: 0,
-  background: 'rgba(9, 15, 12, 0.95)',
-  padding: '1.5rem',
-  boxShadow: 'var(--shadow-lg)'
+  borderTop: '1px solid var(--panel-border)'
 };
 
 const mobileNavList = {
@@ -425,17 +426,6 @@ const mobileNavLink = (active) => ({
   color: active ? 'var(--color-primary)' : 'var(--text-secondary)'
 });
 
-// Inject styling details dynamically for responsive elements
-if (typeof document !== 'undefined') {
-  const style = document.createElement('style');
-  style.textContent = `
-    @media (max-width: 768px) {
-      header nav { display: none !important; }
-      header button[aria-label="Toggle Menu"] { display: block !important; }
-      .username-label { display: none !important; }
-    }
-  `;
-  document.head.appendChild(style);
-}
+
 
 export default Navbar;

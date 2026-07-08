@@ -123,54 +123,111 @@ export const AppProvider = ({ children }) => {
 
   // Community Feed State
   const [posts, setPosts] = useState(() => {
-    const saved = localStorage.getItem('eco-posts');
-    if (saved) return JSON.parse(saved);
-    return [
+  const saved = localStorage.getItem('eco-posts');
+  if (saved) return JSON.parse(saved);
+  return [
+  {
+    id: 'post1',
+    author: {
+      username: 'Prof_Evelyn',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
+      title: 'Climate Scientist'
+    },
+    title: 'Why Global Methane Levels Are the Next Urgent Frontier',
+    content: 'While CO2 is the primary driver of long-term warming, methane holds 80x the warming potential of CO2 over a 20-year timescale. Tackling agricultural emissions and repairing gas pipeline leaks is the fastest way to slow immediate temperature increases.',
+    category: 'Atmosphere',
+    likes: 54,
+    likedBy: [],
+    comments: [
       {
-        id: 'post1',
-        author: {
-          username: 'Prof_Evelyn',
-          avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
-          title: 'Climate Scientist'
-        },
-        title: 'Why Global Methane Levels Are the Next Urgent Frontier',
-        content: 'While CO2 is the primary driver of long-term warming, methane holds 80x the warming potential of CO2 over a 20-year timescale. Tackling agricultural emissions and repairing gas pipeline leaks is the fastest way to slow immediate temperature increases.',
-        category: 'Atmosphere',
-        likes: 54,
-        likedBy: [],
-        comments: [
-          { author: 'Jane Doe', avatar: '', content: 'Agreed! Landfill management is another key area we can improve.', date: '2026-07-01' }
-        ],
-        date: '2026-07-02',
-        poll: null
-      },
-      {
-        id: 'post2',
-        author: {
-          username: 'EcoVoice Team',
-          avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
-          title: 'Admin'
-        },
-        title: 'COMMUNITY POLL: What is your primary mode of commute?',
-        content: 'We are compiling a report on local transit habits to send to the municipal planners. Let us know how you primarily get to work or school.',
-        category: 'Discussion',
-        likes: 29,
-        likedBy: [],
-        comments: [],
-        date: '2026-07-01',
-        poll: {
-          question: 'What is your primary commute method?',
-          options: [
-            { text: 'Walk / Bicycle', votes: 142 },
-            { text: 'Public Transit (Bus/Train)', votes: 218 },
-            { text: 'Electric Vehicle', votes: 65 },
-            { text: 'Petrol/Diesel Car', votes: 110 }
-          ],
-          userVotedOption: null // index
-        }
+        author: 'Jane Doe',
+        avatar: '',
+        content: 'Agreed! Landfill management is another key area we can improve.',
+        date: '2026-07-01'
       }
-    ];
-  });
+    ],
+    date: '2026-07-02',
+    poll: null
+  },
+
+  {
+    id: 'post2',
+    author: {
+      username: 'EcoVoice Team',
+      avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=150&q=80',
+      title: 'Admin'
+    },
+    title: 'COMMUNITY POLL: What is your primary mode of commute?',
+    content: 'We are compiling a report on local transit habits to send to the municipal planners. Let us know how you primarily get to work or school.',
+    category: 'Discussion',
+    likes: 29,
+    likedBy: [],
+    comments: [],
+    date: '2026-07-01',
+    poll: {
+      question: 'What is your primary commute method?',
+      options: [
+        { text: 'Walk / Bicycle', votes: 142 },
+        { text: 'Public Transit (Bus/Train)', votes: 218 },
+        { text: 'Electric Vehicle', votes: 65 },
+        { text: 'Petrol/Diesel Car', votes: 110 }
+      ],
+      userVotedOption: null
+    }
+  },
+
+  {
+    id: 'post3',
+    author: {
+      username: 'Dr_Aqua',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
+      title: 'Water Quality Expert'
+    },
+    title: 'River Water Quality is Declining',
+    content: 'Industrial waste and sewage are polluting rivers. Communities should work together to protect clean water resources.',
+    category: 'Water Quality',
+    likes: 35,
+    likedBy: [],
+    comments: [],
+    date: '2026-07-03',
+    poll: null
+  },
+
+  {
+    id: 'post4',
+    author: {
+      username: 'ForestGuardian',
+      avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80',
+      title: 'Environmental Activist'
+    },
+    title: 'Save Our Forests',
+    content: 'Deforestation is increasing every year. Planting trees and protecting forests can help preserve biodiversity.',
+    category: 'Deforestation',
+    likes: 42,
+    likedBy: [],
+    comments: [],
+    date: '2026-07-03',
+    poll: null
+  },
+
+  {
+    id: 'post5',
+    author: {
+      username: 'RecycleHero',
+      avatar: 'https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=150&q=80',
+      title: 'Recycling Specialist'
+    },
+    title: 'Reduce Plastic Waste',
+    content: 'Reducing single-use plastics and recycling waste can make our environment cleaner and healthier.',
+    category: 'Plastic Waste',
+    likes: 50,
+    likedBy: [],
+    comments: [],
+    date: '2026-07-04',
+    poll: null
+  }
+];
+})
 
   // Carbon Calculator Logs State
   const [carbonLogs, setCarbonLogs] = useState(() => {
