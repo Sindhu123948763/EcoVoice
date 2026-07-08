@@ -200,7 +200,7 @@ const timelineYear = {
   fontFamily: 'var(--font-heading)',
   fontSize: '1.25rem',
   fontWeight: 800,
-  color: 'var(--color-primary)'
+  color: 'var(--color-primary)'          
 };
 
 const timelineCardTitle = {
@@ -271,3 +271,4 @@ if (typeof document !== 'undefined') {
 }
 
 export default About;
+    
