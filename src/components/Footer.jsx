@@ -78,7 +78,7 @@ export const Footer = () => {
       <div style={bottomBar}>
         <div style={bottomContainer}>
           <span>© {new Date().getFullYear()} EcoVoice Global. All rights reserved.</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#ffffff' }}>
             Made with <Heart size={12} color="var(--color-primary)" fill="var(--color-primary)" /> for our Biosphere.
           </span>
         </div>
@@ -139,7 +139,12 @@ const logoText = {
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
-  color: 'var(--text-muted)'
+<<<<<<< HEAD
+  fontWeight: 100,
+  color: 'skyblue'
+=======
+  color: '#FAF9F6'
+>>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
 };
 
 const socialsRow = {
@@ -152,13 +157,16 @@ const socialIcon = {
   width: '36px',
   height: '36px',
   borderRadius: '50%',
-  border: '1px solid var(--panel-border)',
+  border: '1px solid #F5FFFA',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: 'var(--text-secondary)',
+  backgroundColor: '#ffffff77',
+  color: '#039978',
+  fontWeight: 950,
   transition: 'all 0.2s'
 };
+
 
 const titleStyle = {
   fontSize: '1rem',
@@ -179,15 +187,24 @@ const linkList = {
 
 const linkStyle = {
   fontSize: '0.88rem',
+<<<<<<< HEAD
+  fontWeight: 900,
   color: 'var(--text-secondary)',
+=======
+  color: '#F5FFFA',
+>>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
   transition: 'color 0.2s'
 };
 
 const formStyle = {
   display: 'flex',
-  border: '1px solid var(--panel-border)',
+  border: '0.2px solid #F5FFFA',
   borderRadius: 'var(--radius-sm)',
-  background: 'rgba(255, 255, 255, 0.02)',
+<<<<<<< HEAD
+  background: 'rgb(221, 196, 196)',
+=======
+  background: 'rgba(255, 255, 255, 0.05)',
+>>>>>>> 4630e3aa77f77e44d5f952df12e25b013a28a496
   overflow: 'hidden'
 };
 
@@ -196,7 +213,7 @@ const inputStyle = {
   background: 'transparent',
   border: 'none',
   padding: '0.75rem 1rem',
-  color: 'var(--text-primary)',
+  color: 'black',
   fontSize: '0.85rem',
   outline: 'none'
 };
@@ -225,7 +242,7 @@ const bottomBar = {
   borderTop: '1px solid var(--panel-border)',
   padding: '1.5rem 0',
   fontSize: '0.8rem',
-  color: 'var(--text-muted)'
+  color: '#ffffff'
 };
 
 const bottomContainer = {
