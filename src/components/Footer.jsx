@@ -139,6 +139,7 @@ const logoText = {
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
+  fontWeight: 100,
   color: '#FAF9F6'
 };
 
@@ -182,7 +183,8 @@ const linkList = {
 
 const linkStyle = {
   fontSize: '0.88rem',
-  fontWeight: 700,
+  
+  fontWeight: 900,
   color: '#F5FFFA',
   transition: 'color 0.2s'
 };
@@ -197,7 +199,7 @@ const formStyle = {
 
 const inputStyle = {
   flex: 1,
-  background: 'transparent',
+  background: 'white',
   border: 'none',
   padding: '0.75rem 1rem',
   color: 'black',

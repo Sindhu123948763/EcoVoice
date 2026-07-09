@@ -351,7 +351,7 @@ const inspectCard = {
   display: 'flex',
   flexDirection: 'column',
   gap: '1.25rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgb(0, 0, 0)'
 };
 
 const secLabel = {
