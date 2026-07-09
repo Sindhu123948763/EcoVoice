@@ -97,8 +97,8 @@ export const Home = () => {
       {/* Vision & Core Features */}
       <section style={featuresSection}>
         <div style={sectionHeader}>
-          <h2 style={sectionTitle}>Ecological Operations</h2>
-          <p style={sectionSub}>Citizens report, validate, and lobby. Our community builds accountability.</p>
+          <h2 style={{ ...sectionTitle, color: '#1b4332' }}>Ecological Operations</h2>
+          <p style={{ ...sectionSub, color: 'black'  }}>Citizens report, validate, and lobby. Our community builds accountability.</p>
         </div>
 
         <div className="grid-cols-3" style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -129,8 +129,8 @@ export const Home = () => {
       {/* Climate News Slider */}
       <section style={newsSection}>
         <div style={sectionHeader}>
-          <h2 style={sectionTitle}>Climate Intelligence</h2>
-          <p style={sectionSub}>Key environmental updates curated directly by our network scientists.</p>
+          <h2 style={{ ...sectionTitle, color: '#1b4332' }}>Climate Intelligence</h2>
+          <p style={{ ...sectionSub, color: 'black' }}>Key environmental updates curated directly by our network scientists.</p>
         </div>
         <div className="grid-cols-3" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {newsItems.map((n, i) => (

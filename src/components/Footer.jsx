@@ -78,7 +78,7 @@ export const Footer = () => {
       <div style={bottomBar}>
         <div style={bottomContainer}>
           <span>© {new Date().getFullYear()} EcoVoice Global. All rights reserved.</span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+          <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', color: '#ffffff' }}>
             Made with <Heart size={12} color="var(--color-primary)" fill="var(--color-primary)" /> for our Biosphere.
           </span>
         </div>
@@ -89,6 +89,10 @@ export const Footer = () => {
 
 const footerStyle = {
   background: '#5a5a5a',
+<<<<<<< HEAD
+=======
+  fontWeight:950,
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   borderTop: '1px solid var(--panel-border)',
   padding: '4rem 2rem 0 2rem',
   color: 'var(--text-secondary)',
@@ -138,8 +142,13 @@ const logoText = {
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
+<<<<<<< HEAD
   fontWeight: '600',
   color: 'var(--text-muted)'
+=======
+  fontWeight: 100,
+  color: '#FAF9F6'
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
 };
 
 const socialsRow = {
@@ -152,13 +161,16 @@ const socialIcon = {
   width: '36px',
   height: '36px',
   borderRadius: '50%',
-  border: '1px solid var(--panel-border)',
+  border: '1px solid #F5FFFA',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: 'var(--text-secondary)',
+  backgroundColor: '#ffffff77',
+  color: '#039978',
+  fontWeight: 950,
   transition: 'all 0.2s'
 };
+
 
 const titleStyle = {
   fontSize: '1rem',
@@ -178,25 +190,45 @@ const linkList = {
 };
 
 const linkStyle = {
+<<<<<<< HEAD
   fontSize: '700',
   color: 'var(--text-secondary)',
+=======
+  fontSize: '0.88rem',
+  
+  fontWeight: 900,
+  color: '#F5FFFA',
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   transition: 'color 0.2s'
 };
 
 const formStyle = {
   display: 'flex',
+<<<<<<< HEAD
   border: 'none',
   borderRadius: '6px',
   background: 'transparent',
+=======
+  border: '0.2px solid #F5FFFA',
+  borderRadius: 'var(--radius-sm)',
+  background: 'rgba(255, 255, 255, 0.05)',
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   overflow: 'hidden'
 };
 
 const inputStyle = {
   flex: 1,
+<<<<<<< HEAD
   background: 'transparent',
   border: '2x solid #00c853',
   padding: '0.75rem 1rem',
   color: '#ffffff',
+=======
+  background: 'white',
+  border: 'none',
+  padding: '0.75rem 1rem',
+  color: 'black',
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   fontSize: '0.85rem',
   outline: 'none',
   borderRadius:'6px'
@@ -225,9 +257,14 @@ const successNotif = {
 const bottomBar = {
   borderTop: '1px solid var(--panel-border)',
   padding: '1.5rem 0',
+<<<<<<< HEAD
   fontSize: '0.9rem',
   fontWeight:"600",
   color: 'var(--text-muted)'
+=======
+  fontSize: '0.8rem',
+  color: '#ffffff'
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
 };
 
 const bottomContainer = {

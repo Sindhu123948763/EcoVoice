@@ -24,7 +24,7 @@
 
   /* Light Theme Overrides (Default is Dark/Eco Mode) */
   --bg-color: #050a07;
-  --panel-bg: rgba(18, 30, 23, 0.7);
+  --panel-bg: black ;
   --panel-border: rgba(255, 255, 255, 0.08);
   --panel-hover-bg: rgba(26, 43, 33, 0.85);
   --text-primary: #f0fdf4;
@@ -80,10 +80,10 @@
   to { transform: translateX(0); opacity: 1; }
 }
 
-@keyframes pulseGlow {
+/* @keyframes pulseGlow {
   0%, 100% { box-shadow: 0 0 15px rgba(0, 245, 160, 0.3); }
   50% { box-shadow: 0 0 25px rgba(0, 245, 160, 0.6); }
-}
+} */
 
 @keyframes scaleUp {
   from { transform: scale(0.95); opacity: 0; }

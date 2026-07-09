@@ -25,8 +25,8 @@ export const ClimateMap = () => {
       {/* Header */}
       <section style={headerRow}>
         <div>
-          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(169, 217, 217, 0.8)' }}>Climate Data Desk</h1>
-          <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>Toggle environmental diagnostic layers. Select sectors to inspect compliance records.</p>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(56, 101, 79, 1)' }}>Climate Data Desk</h1>
+          <p style={{ margin: '0.25rem 0 0 0', color: 'rgba(54, 67, 60, 1)' }}>Toggle environmental diagnostic layers. Select sectors to inspect compliance records.</p>
         </div>
       </section>
 
@@ -160,7 +160,7 @@ const layersBar = {
   display: 'flex',
   flexDirection: 'column',
   gap: '0.75rem',
-  background: 'rgba(9, 15, 12, 0.4)'
+  background: 'rgba(15, 16, 16, 1)'
 };
 
 const panelTitleRow = {
@@ -214,7 +214,7 @@ const activeLayerBtn = {
 
 const mapWrapper = {
   padding: '1.5rem',
-  background: 'rgba(9, 15, 12, 0.2)'
+  background: 'rgba(15, 16, 16, 1)'
 };
 
 const inspectorCol = {
@@ -228,7 +228,7 @@ const inspectCard = {
   display: 'flex',
   flexDirection: 'column',
   gap: '1.25rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgba(15, 16, 16, 1)'
 };
 
 const regionNameText = {

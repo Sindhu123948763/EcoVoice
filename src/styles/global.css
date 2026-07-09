@@ -67,6 +67,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  width: fit-content;
 }
 
 .main-layout {
@@ -95,7 +96,9 @@ a:hover {
 
 /* Glassmorphism styling */
 .glass-panel {
-  background: #fff;
+ 
+  background: black;
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -105,8 +108,8 @@ a:hover {
 }
 
 .glass-panel:hover {
-  background: var(--panel-hover-bg);
-  border-color: rgba(0, 245, 160, 0.2);
+  /* background: var(--panel-hover-bg);
+  border-color: rgba(0, 245, 160, 0.2); */
 }
 
 /* .glass-card {
@@ -121,7 +124,7 @@ a:hover {
 } */
 
 .glass-card {
-  background: var(--panel-bg);
+  background: rgba(15, 16, 16, 1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
@@ -134,22 +137,6 @@ a:hover {
               border-color var(--transition-normal),
               transform var(--transition-fast),
               box-shadow var(--transition-fast);
-}
-
-
-/* .glass-card:hover {
-   transform: none;
-    background: #666d68;   /* Use the same color as .glass-panel:hover */
-    /* box-shadow: var(--shadow-md); */
-  /* transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(0, 245, 160, 0.3); */
-/* } */ 
-
-
-
-.glass-card {
-  background: var(--panel-bg);
 }
 
 .glass-card:hover {
@@ -233,10 +220,14 @@ a:hover {
 .form-input,
 .form-textarea,
 .form-select {
+<<<<<<< HEAD
   width: 100%;
   padding: 12px 16px;
   background: #fff;
   color: #000;
+=======
+  background: rgba(241, 239, 239, 0.03);
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
   border: 1px solid var(--panel-border);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
@@ -272,6 +263,11 @@ a:hover {
   resize: vertical;
   min-height: 100px;
 }
+.form-select option{
+  background: #1c1c1c;
+  color: #ffffff;
+}
+
 
 /* Color and Text Utility Classes */
 .text-gradient {
@@ -292,6 +288,7 @@ a:hover {
 }
 
 .badge-success {
+<<<<<<< HEAD
   background: rgb(52, 211, 153);
   color: var(--color-da);
 }
@@ -299,6 +296,10 @@ a:hover {
 .badge-primary {
   color: rgb(50, 196, 142);
   background: rgb(0, 0, 0);
+=======
+  background: rgba(5, 165, 106, 0.507);
+  color: #1090B2;
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a
 }
 
 .badge-warning {
@@ -312,8 +313,8 @@ a:hover {
 }
 
 .badge-info {
-  background: rgba(96, 165, 250, 0.15);
-  color: var(--color-info);
+  background: rgba(185, 194, 204, 0.15);
+  color: blue;
 }
 
 /* Common Visual Layouts */
@@ -371,6 +372,7 @@ a:hover {
   gap: 1rem;
   align-items: center;
 }
+<<<<<<< HEAD
 .form-select {
   width: 100%;
   padding: 12px 16px;
@@ -411,3 +413,39 @@ a:hover {
     color:#888;
     opacity:0.6;
 }
+=======
+
+
+/* ===========================
+   Navbar Responsive
+=========================== */
+
+.desktop-nav{
+    display:flex;
+}
+
+.mobile-menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .desktop-nav{
+        display:none !important;
+    }
+
+    .mobile-menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .notification-btn{
+        display:none;
+    }
+
+    .username{
+        display:none;
+    }
+}
+>>>>>>> 35249c6e85f910978f6d7cbb0962a901683e568a

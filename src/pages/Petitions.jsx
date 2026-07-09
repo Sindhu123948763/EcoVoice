@@ -63,8 +63,8 @@ export const Petitions = () => {
       {/* Header */}
       <section style={headerRow}>
         <div>
-          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'var(--color-primary)' }}>Lobbying & Petitions</h1>
-          <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>Advocate for policy shifts. Collect verified signatures. Prompt agency audits.</p>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(56, 101, 79, 1)' }}>Lobbying & Petitions</h1>
+          <p style={{ margin: '0.25rem 0 0 0', color: 'rgba(54, 67, 60, 1)' }}>Advocate for policy shifts. Collect verified signatures. Prompt agency audits.</p>
         </div>
         <button className="btn btn-primary" onClick={() => setShowCreateModal(true)}>
           <Plus size={16} />
@@ -290,7 +290,7 @@ const sectionSubtitle = {
   fontSize: '1.25rem',
   fontWeight: 800,
   margin: 0,
-  color: 'var(--color-primary)'
+  color: 'rgba(56, 101, 79, 1)'
 };
 
 const cardsList = {
@@ -306,8 +306,8 @@ const petCard = (active) => ({
   cursor: 'pointer',
   padding: '1.25rem',
   border: active ? '1px solid var(--color-primary)' : '1px solid var(--panel-border)',
-  background: active ? 'rgba(0, 245, 160, 0.03)' : 'var(--panel-bg)',
-  boxShadow: active ? 'var(--shadow-glow)' : 'var(--shadow-sm)',
+  background: active ? 'rgba(28, 29, 29, 0.92)' : '#000000',
+  boxShadow: active ? 'rgba(28, 29, 29, 0.92)' : '#000000',
   transition: 'all 0.2s'
 });
 
@@ -351,7 +351,7 @@ const inspectCard = {
   display: 'flex',
   flexDirection: 'column',
   gap: '1.25rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgb(0, 0, 0)'
 };
 
 const secLabel = {

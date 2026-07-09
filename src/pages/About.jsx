@@ -1,27 +1,28 @@
 /* src/pages/About.jsx */
 import React from 'react';
 import { Award, Compass, Heart, Users } from 'lucide-react';
+import kalpanaImage from '../assets/kalpana.jpg';
 import '../styles/global.css';
 
 export const About = () => {
   const team = [
     {
-      name: "Dr. Evelyn Sterling",
-      role: "Climate Intelligence Director",
-      bio: "Former IPCC researcher with 12+ years of atmospheric analysis. Leading our AI diagnostic validation standards.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
+      name: "Raghu Vamshi Kadiri",
+      role: "Youth Activist, Environmentalist, and innovator",
+      bio: "He is widely recognized for mobilizing vast networks of volunteers and promoting sustainable development to tackle critical social and environmental issues across India.",
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbSqkJ0AjA06CWA6cB7uiERiQJtcwlxKIC4KxZx0utyA&s=10"
     },
     {
-      name: "Marcus Chen",
+      name: "Kalpana Ramesh",
       role: "Core Platform Architect",
-      bio: "Systems programmer dedicated to ecological transparency. Architected our distributed community voting system.",
-      img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80"
+      bio: "She is the co-founder and CEO of the rainwater project, a social enterprise which helps individuals and communities with sustainable rainwater harvesting, water conservation and water management.",
+      img: kalpanaImage
     },
     {
-      name: "Diana Prince",
-      role: "Lobby & Coalition Lead",
-      bio: "Environmental lawyer specialized in community action lobbying. Coordinating petition reports with government regulators.",
-      img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80"
+      name: "Dr. N. Sai Bhaskar Reddy:",
+      role: "Environmental and Development Scientist",
+      bio: "He is a globally recognized climate engineering innovator who pioneered the Black Revolution through biochar systems, carbon sequestration, and soil health management in India.",
+      img: "https://i.ytimg.com/vi/DT7iENA5sYw/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgXyhNMA8=&rs=AOn4CLBCSd2BcjUpOgpuhUuYKgC3ViqkIQ"
     }
   ];
 
@@ -36,8 +37,7 @@ export const About = () => {
     <div className="animate-fade" style={wrapper}>
       {/* Intro Header */}
       <section style={aboutIntro}>
-        <span className="badge badge-info" style={{ marginBottom: '1rem' }}>Our Purpose</span>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'rgba(169, 217, 217, 0.8)' }}>Restoring Accountability to our Biosphere</h1>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 800, color: 'rgba(6, 102, 102, 0.8)' }}>Restoring Accountability to our Biosphere</h1>
         <p style={introSub}>
           EcoVoice Global is a non-governmental initiative bridging the gap between local citizens, automated AI classification, and public policy representation.
         </p>
@@ -89,7 +89,7 @@ export const About = () => {
       <section style={teamSection}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h2 style={sectionTitle}>The Guardians</h2>
-          <p style={{ color: 'var(--text-secondary)' }}>A dedicated squad of scientists, coders, and advocates.</p>
+          <p style={{ color: 'black' }}>A dedicated squad of scientists, coders, and advocates.</p>
         </div>
         <div className="grid-cols-3" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {team.map((member, i) => (
@@ -121,7 +121,7 @@ const aboutIntro = {
 
 const introSub = {
   fontSize: '1.1rem',
-  color: 'var(--text-secondary)',
+  color: '#030712',
   marginTop: '1rem',
   lineHeight: '1.7'
 };
@@ -159,7 +159,7 @@ const sectionTitle = {
   fontWeight: 800,
   textAlign: 'center',
   marginBottom: '3rem',
-  color: 'rgba(169, 217, 217, 0.8)'
+  color: 'rgb(11, 141, 141)'
 };
 
 const timelineWrapper = {
@@ -200,7 +200,7 @@ const timelineYear = {
   fontFamily: 'var(--font-heading)',
   fontSize: '1.25rem',
   fontWeight: 800,
-  color: 'var(--color-primary)'
+  color: 'var(--color-primary)'          
 };
 
 const timelineCardTitle = {
@@ -228,7 +228,8 @@ const teamCard = {
 
 const teamImg = {
   width: '100%',
-  height: '240px',
+  height: '300px',
+
   objectFit: 'cover'
 };
 
@@ -271,3 +272,4 @@ if (typeof document !== 'undefined') {
 }
 
 export default About;
+    

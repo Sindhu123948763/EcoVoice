@@ -85,8 +85,8 @@ export const Complaints = () => {
       {/* Page Header */}
       <section style={headerRow}>
         <div>
-          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(169, 217, 217, 0.8)' }}>Eco Threat Registry</h1>
-          <p style={{ margin: '0.25rem 0 0 0', color: 'var(--text-secondary)' }}>Log local threats. AI automates auditing. Citizens enforce validation.</p>
+          <h1 style={{ fontSize: '2.2rem', fontWeight: 800, margin: 0, color: 'rgba(56, 101, 79, 1)' }}>Eco Threat Registry</h1>
+          <p style={{ margin: '0.25rem 0 0 0', color: 'rgba(54, 67, 60, 1)' }}>Log local threats. AI automates auditing. Citizens enforce validation.</p>
         </div>
         <button className="btn btn-primary" onClick={() => setShowCreateModal(true)}>
           <Camera size={16} />
@@ -103,7 +103,7 @@ export const Complaints = () => {
             {complaints.map(c => (
               <div key={c.id} className="glass-card" style={claimCard(selectedComplaint?.id === c.id)} onClick={() => setSelectedComplaint(c)}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span className="badge" style={{ background: 'rgba(255,255,255,0.05)', color: 'var(--text-secondary)' }}>{c.category}</span>
+                  <span className="badge" style={{ background: 'rgba(28, 29, 29, 0.92)', color: 'var(--text-secondary)' }}>{c.category}</span>
                   <span className="badge" style={{ background: `${getSeverityColor(c.severity)}20`, color: getSeverityColor(c.severity) }}>{c.severity}</span>
                 </div>
                 <h4 style={claimTitle}>{c.title}</h4>
@@ -352,7 +352,7 @@ const sectionSubtitle = {
   fontSize: '1.25rem',
   fontWeight: 800,
   margin: 0,
-  color: 'rgba(169, 217, 217, 0.8)'
+  color: 'rgba(56, 101, 79, 1)'
 };
 
 const claimsList = {
@@ -368,8 +368,8 @@ const claimCard = (active) => ({
   cursor: 'pointer',
   padding: '1.25rem',
   border: active ? '1px solid var(--color-primary)' : '1px solid var(--panel-border)',
-  background: active ? 'rgba(0, 245, 160, 0.03)' : 'var(--panel-bg)',
-  boxShadow: active ? 'var(--shadow-glow)' : 'var(--shadow-sm)'
+  background: active ? 'rgba(28, 29, 29, 0.92)' : '#000000',
+  boxShadow: active ? 'rgba(28, 29, 29, 0.92)' : '#000000'
 });
 
 const claimTitle = {
@@ -403,7 +403,7 @@ const inspectCard = {
   display: 'flex',
   flexDirection: 'column',
   gap: '1.25rem',
-  background: 'rgba(9, 15, 12, 0.6)'
+  background: 'rgb(0, 0, 0)'
 };
 
 const inspectMetaRow = {

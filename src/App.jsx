@@ -67,7 +67,7 @@ const AppContent = () => {
 
             {/* Public Pages */}
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About />} /> 
             <Route path="/contact" element={<Contact />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/learn" element={<Learn />} />
@@ -160,4 +160,4 @@ export const App = () => {
   );
 };
 
-export default App;
+export default App; 
