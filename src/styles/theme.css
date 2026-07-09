@@ -24,7 +24,7 @@
 
   /* Light Theme Overrides (Default is Dark/Eco Mode) */
   --bg-color: #050a07;
-  --panel-bg: rgba(18, 30, 23, 0.7);
+  --panel-bg: black ;
   --panel-border: rgba(255, 255, 255, 0.08);
   --panel-hover-bg: rgba(26, 43, 33, 0.85);
   --text-primary: #f0fdf4;

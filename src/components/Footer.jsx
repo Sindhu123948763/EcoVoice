@@ -88,8 +88,8 @@ export const Footer = () => {
 };
 
 const footerStyle = {
-  background: 'rgba(61, 59, 60, 1)',
-  fontWeight: 950,
+  background: '#5a5a5a',
+  fontWeight:950,
   borderTop: '1px solid var(--panel-border)',
   padding: '4rem 2rem 0 2rem',
   color: 'var(--text-secondary)',

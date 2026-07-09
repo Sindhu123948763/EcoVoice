@@ -96,7 +96,7 @@ a:hover {
 
 /* Glassmorphism styling */
 .glass-panel {
-  background: rgba(15, 16, 16, 1);
+  background: black;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--panel-border);
