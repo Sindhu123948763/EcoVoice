@@ -21,7 +21,7 @@ export const Footer = () => {
         <div style={columnStyle}>
           <div style={logoWrapper}>
             <div style={logoIcon}>
-              <Leaf size={16} color="#050a07" fill="#050a07" />
+              <Leaf size={16} color="#383a3958" fill="#050a07" />
             </div>
             <span style={logoText}>EcoVoice Global</span>
           </div>
@@ -88,7 +88,7 @@ export const Footer = () => {
 };
 
 const footerStyle = {
-  background: 'rgba(5, 10, 7, 0.95)',
+  background: '#5a5a5a',
   borderTop: '1px solid var(--panel-border)',
   padding: '4rem 2rem 0 2rem',
   color: 'var(--text-secondary)',
@@ -131,13 +131,14 @@ const logoIcon = {
 const logoText = {
   fontFamily: 'var(--font-heading)',
   fontSize: '1.15rem',
-  fontWeight: 800,
+  fontWeight: '800',
   color: 'var(--text-primary)'
 };
 
 const descText = {
   fontSize: '0.85rem',
   lineHeight: '1.6',
+  fontWeight: '600',
   color: 'var(--text-muted)'
 };
 
@@ -177,27 +178,28 @@ const linkList = {
 };
 
 const linkStyle = {
-  fontSize: '0.88rem',
+  fontSize: '700',
   color: 'var(--text-secondary)',
   transition: 'color 0.2s'
 };
 
 const formStyle = {
   display: 'flex',
-  border: '1px solid var(--panel-border)',
-  borderRadius: 'var(--radius-sm)',
-  background: 'rgba(255, 255, 255, 0.02)',
+  border: 'none',
+  borderRadius: '6px',
+  background: 'transparent',
   overflow: 'hidden'
 };
 
 const inputStyle = {
   flex: 1,
   background: 'transparent',
-  border: 'none',
+  border: '2x solid #00c853',
   padding: '0.75rem 1rem',
-  color: 'var(--text-primary)',
+  color: '#ffffff',
   fontSize: '0.85rem',
-  outline: 'none'
+  outline: 'none',
+  borderRadius:'6px'
 };
 
 const submitBtnStyle = {
@@ -223,7 +225,8 @@ const successNotif = {
 const bottomBar = {
   borderTop: '1px solid var(--panel-border)',
   padding: '1.5rem 0',
-  fontSize: '0.8rem',
+  fontSize: '0.9rem',
+  fontWeight:"600",
   color: 'var(--text-muted)'
 };
 
@@ -234,7 +237,9 @@ const bottomContainer = {
   justifyContent: 'space-between',
   alignItems: 'center',
   flexWrap: 'wrap',
-  gap: '1rem'
+  gap: '1rem',
+  fontWeight:'600'
+
 };
 
 // Responsiveness injection

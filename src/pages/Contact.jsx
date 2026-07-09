@@ -69,7 +69,7 @@ export const Contact = () => {
       {/* Intro Header */}
       <section style={introSection}>
         <span className="badge badge-primary">Support Center</span>
-        <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginTop: '0.5rem', color: 'rgba(169, 217, 217, 0.8)' }}>Get in Touch</h1>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 800, marginTop: '0.5rem', color: 'rgb(7, 132, 157)' }}>Get in Touch</h1>
         <p style={{ color: 'var(--text-secondary)' }}>Have questions, partnership inquiries, or critical escalation requests?</p>
       </section>
 
@@ -80,7 +80,7 @@ export const Contact = () => {
           <h3 style={cardTitle}>Eco Report Inbox</h3>
           {submitted ? (
             <div style={successBox}>
-              <h4 style={{ color: 'var(--color-primary)', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <h4 style={{ color: '#fff', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 🎉 Message Logged Successfully!
               </h4>
               <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginTop: '0.5rem' }}>
@@ -123,13 +123,14 @@ export const Contact = () => {
               <div className="form-group">
                 <label className="form-label" htmlFor="category">Category</label>
                 <select
-                  id="category"
-                  name="category"
-                  value={formData.category}
-                  onChange={handleInputChange}
-                  className="form-select"
+                id="category"
+                name="category"
+                value={formData.category}
+                onChange={handleInputChange}
+                className="form-select"
+                size={1}
                 >
-                  <option value="General Inquiries">General Inquiries</option>
+                  <option value="General Inquiries ">General Inquiries</option>
                   <option value="Threat Escalation">Threat Escalation</option>
                   <option value="Tech Support">Tech Support</option>
                   <option value="Partner Collaboration">Partner Collaboration</option>
@@ -216,7 +217,7 @@ const wrapper = {
   width: '100%',
   padding: '2rem 0 4rem 0'
 };
-
+  
 const introSection = {
   textAlign: 'center',
   marginBottom: '3rem'
@@ -231,7 +232,8 @@ const gridStyle = {
 };
 
 const formCard = {
-  padding: '2.5rem 2rem'
+  padding: '2.5rem 2rem',
+  background:"#000000",
 };
 
 const cardTitle = {
@@ -242,8 +244,9 @@ const cardTitle = {
 
 const successBox = {
   padding: '1.5rem',
-  background: 'rgba(0, 245, 160, 0.05)',
-  border: '1px solid rgba(0, 245, 160, 0.2)',
+  background: '#fff',
+  border: '1px solid rgb(244, 244, 244)',
+  color: '#fff',
   borderRadius: '8px',
   textAlign: 'center'
 };
@@ -264,7 +267,8 @@ const contactCard = {
   padding: '1.5rem',
   display: 'flex',
   flexDirection: 'column',
-  gap: '1.25rem'
+  gap: '1.25rem',
+  background:"#000000"
 };
 
 const contactItem = {
@@ -290,7 +294,7 @@ const contactVal = {
 const faqWrapper = {
   display: 'flex',
   flexDirection: 'column',
-  gap: '1rem'
+  gap: '1rem',
 };
 
 const faqTitle = {
@@ -299,16 +303,19 @@ const faqTitle = {
 };
 
 const faqItemStyle = {
+  background: '#000000',
+  border: '1px solid #00c853',
   borderRadius: '8px',
   padding: '0.5rem',
   overflow: 'hidden'
 };
 
+
 const faqHeaderBtn = {
   width: '100%',
-  background: 'none',
+  background: '#000000',
   border: 'none',
-  color: 'var(--text-primary)',
+  color: '#ffffff',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
